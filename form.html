@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario De Registro</title>
+</head>
+<body>
+    
+    <!-- El formulario se inicia con la etiqueta <form> -->
+    <form action="submit.html" method="POST">
+        <!-- El metodo POST envia informacion, y el metodo GET trae informacion -->      
+        <!--
+        action: Especifica a donde se enviara el formulario.
+        method: POST es el metodo HTTP que se utiliza
+        -->
+        <!-- Entrada de texto para el nombre -->
+         <label for="nombre">Nombre:  </label>
+        <input type="text" id="nombre" name="nombre" maxlength="10" pattern="[a-z]{1,10}" title="NO SE PERMITEN NUMEROS" placeholder="Ingrese su nombre" required>
+        <!--type="text": Especifica un campo de texto
+            id: Identificador UNICO del campo, se utiliza para asociarlo con la etiqueta <label>
+            name: Nombre del campo, es importante para identificarlo en el servidor.
+            maxLength: Se establece un maximo de caracteres
+            pattern: Se utiliza para utilizar solamente letras y no numeros
+            title: Es un mensaje de aviso de que estas haciendo algo mal
+            placeholder: Indica en manera transparente que es lo que tiene que completar el usuario
+            required: Hace que este campo sea obligatorio   
+        -->
+        <p>Maximo 10 caracteres</p>
+
+        <!-- Input para el email -->
+         <label for="email">Correo Electronico:</label>
+         <input type="email" id="email" name="email" required>
+        <!--
+                type="email": Valida que el usuario ingrese un formato de correo valido.
+        -->
+                
+        <br><br>
+
+        <!-- Selector de opciones (dropdown)-->
+
+        <label for="pais">País</label>
+        <select name="pais" id="pais">
+            <option value="argentina"> Argentina</option>
+            <option value="ecuador"> Ecuador</option>
+            <option value="mexico"> Mexico</option>
+
+            <!--
+            <select> : Crea un menu desplegable.
+            <option> : Cada opcion disponible en el menú.
+            value: El valor que se enviara al servidor cuando el usuario seleccione esta opcion
+            -->
+
+        </select>
+
+        <br><br>
+
+        <label for="cumpleaños">Fecha de cumpleaños</label>
+        <input type="date" id="cumpleaños" name="cumpleaños">
+
+        <!-- 
+       <type>="date" : El tipo Date lo que hace es poder elegir cualquier fecha. 
+        -->
+
+        <br><br>
+
+        <!-- Area de texto para comentarios -->
+
+        <label for="comentarios"> Comentarios: </label>
+        <textarea name="comentarios" id="comentraios" rows="4" cols="50"></textarea>
+        <!-- 
+       <textarea> : Campo para texto largo.
+        rows y cols: Especifican el tamaño inicial del area de texto. 
+        -->
+        <br><br>
+
+        <!-- Casilla de verificacion -->
+         <label>
+            <input type="checkbox" name="terminos" required>
+            Acepto los terminos y condiciones
+         </label>
+
+         <!--
+         type="checkbox": Crea una casilla para seleccionar o no.
+         required: Hace que sea obligatorio
+         -->
+
+         <br><br>
+
+        <!--Boton de envio de formulario -->
+        <button type="submit">Enviar</button>
+        <!--El atributo submit lo que hace es enviar los datos del formulario al servidor-->
+    </form>
+
+
+
+</body>
+</html>
