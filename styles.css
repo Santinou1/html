@@ -1,0 +1,45 @@
+body{
+    background-color: bisque;
+}
+
+h1{
+    color: darkblue;
+    font-size: 28px;
+}
+
+label{
+    color: black;
+    font-style: italic;
+    font-size: 16px;
+}
+
+.fondoClaro{
+   font-size: 14px;
+   background-color: whitesmoke ; 
+}
+
+button{
+    color: white;
+    background-color: green;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button[type="reset"]{
+    background-color: red;
+}
+
+/* Manera diferente de usar el type="reset"
+.reset{
+    background-color: red;
+}
+*/
+
+
+select option {
+    color: blue
+}
+
+.RYC{
+    cursor: pointer;
+}

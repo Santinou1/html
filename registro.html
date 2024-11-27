@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forulario de registro para Conferencia</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     
@@ -11,37 +12,37 @@
     <form action="submit.html" method="POST">
         <!--Nombre Completo-->
         <label for="nombre">Nombre Completo:</label>
-        <input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" maxlength="14" required>
+        <input type="text" class="fondoClaro" name="nombre" placeholder="Escribe tu nombre completo" maxlength="14" required>
 
         <br><br>
 
         <!-- Correo Electronico -->
          <label for="email">Correo Electronico</label>
-         <input type="email" name="email" id="email" placeholder="ejemplo@correo.com" required>
+         <input type="email" class="fondoClaro" name="email" id="email" placeholder="ejemplo@correo.com" required>
 
          <br><br>
 
          <!-- Numero de telefono -->
 
          <label for="telefono"> Numero de telefono </label>
-         <input type="number" id="telefono" name="telefono" placeholder="Ejemplo: 123456789" required>
+         <input type="number" class="fondoClaro" id="telefono" name="telefono" placeholder="Ejemplo: 123456789" required>
 
          <br><br>
 
         <!-- Fecha de Nacimiento -->
 
         <label for="fecha"> Fecha de nacimiento</label>
-        <input type="date" name="fecha" id="fecha">
+        <input type="date" class="fondoClaro" name="fecha" id="fecha">
         <br><br>
 
         <!-- Genero -->
 
         <label> Genero: </label>
-        <input type="radio" id="masculino" name="genero" value="1" required>
+        <input type="radio" class="RYC"  id="masculino" name="genero" value="1" required>
         <label for="masculino"> Masculino </label>
-        <input type="radio" id="femenino" name="genero" value="2" required>
+        <input type="radio" class="RYC" id="femenino" name="genero" value="2" required>
         <label for="femenino"> Femenino </label>
-        <input type="radio" id="otro" name="genero" value="3" required>
+        <input type="radio" class="RYC" id="otro" name="genero" value="3" required>
         <label for="otro">Otro</label>
 
         <br><br>
@@ -49,20 +50,20 @@
         <!-- Interes -->
 
         <label> Intereses: </label>
-        <input type="checkbox" id="tecnologia" name="intereses" value="Tecnologia">
+        <input type="checkbox" class="RYC" id="tecnologia" name="intereses" value="Tecnologia">
         <label for="tecnologia">Tecnologia</label>
-        <input type="checkbox" id="ciencia" name="intereses" value="Ciencia">
+        <input type="checkbox" class="RYC" id="ciencia" name="intereses" value="Ciencia">
         <label for="ciencia">Ciencia</label>
-        <input type="checkbox" id="arte" name="intereses" value="Arte">
+        <input type="checkbox" class="RYC" id="arte" name="intereses" value="Arte">
         <label for="arte"> Arte </label>
-        <input type="checkbox" id="negocios" name="intereses" value="Negocios">
+        <input type="checkbox" class="RYC" id="negocios" name="intereses" value="Negocios">
         <label for="negocios"> Negocios </label>
 
         <br><br>
 
         <!--Pais de residencia-->
         <label for="pais"> Pais de Residencia:</label>
-        <select name="pais" id="pais">
+        <select name="pais" class="fondoClaro" id="pais">
             <option value="">Selecciona tu pais</option>
             <option value="argentina">Argentina</option>
             <option value="ecuador">Ecuador</option>
@@ -72,7 +73,7 @@
 
         <!-- Mensaje Adicional -->
         <label for="mensaje">Mensaje adicional </label>
-        <textarea name="mensaje" id="mensaje" rows="4" cols="40" placeholder="Escribe algun comentario extra"></textarea>
+        <textarea name="mensaje" class="fondoClaro" id="mensaje" rows="4" cols="40" placeholder="Escribe algun comentario extra"></textarea>
         <br><br>
 
         <!-- ¿Acepta recibir novedades? -->
@@ -83,7 +84,7 @@
         <!-- Botones -->
 
         <button type="submit">Enviar</button>
-        <button type="reset"> Limpiar </button>
+        <button type="reset" class="reset"> Limpiar </button>
 
     </form>
 
