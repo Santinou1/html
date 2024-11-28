@@ -1,0 +1,85 @@
+body{
+    background-color: lightcyan;
+}
+
+
+/* Ejercicio 1 : Titutlos   */
+
+h1 {
+    color: darkblue;
+
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-style: italic;
+}
+
+/* Ejercicio 2 : Texto y Parrafos   */
+
+p {
+    color: gray;
+    font-size: 18px;
+    cursor: pointer;
+
+}
+
+/* Ejercicio 3 : Enlaces   */
+
+
+a {
+    color: blue;
+    font-size: 16px;
+}
+
+/* Ejercicio 4 : Listas   */
+
+ul {
+    background-color: lightyellow;
+    font-size: 16px;
+}
+
+ol{
+    background-color: lightcyan;
+    font-size: 16px;
+}
+
+/* Ejercicio 5 : Contenedor Generico   */
+
+div {
+    background-color: lavender;
+    font-size: 20px;
+    font-style: italic;
+}
+
+/* Ejercicio 6 : Formularios   */
+
+form label {
+    color: darkred;
+    font-size: 14px;
+
+}
+
+.formCamp{
+    font-size: 14px;
+    background-color: aliceblue;
+}
+
+/* Ejercicio 7 : Botones   */
+
+button{
+    background-color: lightgreen;
+    color: darkgreen;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="reset"]{
+    background-color: lightcoral;
+    color: red;
+    font-size: 16px;
+    cursor: pointer;
+}
