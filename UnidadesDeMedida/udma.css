@@ -1,6 +1,8 @@
 body{
     font-family: Arial, sans-serif;
     margin: 20px;
+    font-size: 16px; /*ACA DEFINIMOS LA FUENTE BASE*/
+
 }
 
 .box{
@@ -15,4 +17,16 @@ body{
 .text{
     font-size: 20px; 
     margin: 10px;
+}
+.container{
+    width: 50%; /* Relativo al ancho de la ventana*/
+    height: 30vh; /* 30% de la altura del viewport*/
+    background-color: lightgreen;
+    margin-bottom: 20px;
+}
+
+.text1{
+    font-size: 1.5rem; /* Relativo al tamaño de fuente raiz*/
+    padding: 1em; /* Relativo al tamaño de fuente del contenedor*/
+    
 }
