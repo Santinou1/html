@@ -1,0 +1,28 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+h1{
+    text-align: center;
+    color: #333;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr); /* 3 columnas iguales */
+    gap: 10px; /* Espacio entre los elementos*/
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.grid-item{
+    background-color: #4caf50;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.em;
+}
